@@ -19,6 +19,7 @@ main {
   background-color: white;
   height: auto;
   width: 94vw;
+  max-width: 400px;
   border-radius: 10px;
 }
 .container-1 .container-picture {
@@ -27,6 +28,7 @@ main {
   background-repeat: no-repeat;
   height: 30vh;
   width: 94vw;
+  max-width: 400px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -76,6 +78,7 @@ main {
 .btn-add-cart {
   height: 50px;
   width: 89vw;
+  max-width: 380px;
   margin-left: 10px;
   margin-bottom: 25px;
   border-radius: 10px;
@@ -91,13 +94,11 @@ main {
 }
 
 
-@media (min-width: 768px) {}
-
-
 @media (min-width: 1024px) {
   .container-1 {
     display: flex;
     width: 70vw;
+    max-width: 635px;
     justify-content: center;
     align-items: center;
   }
@@ -107,7 +108,7 @@ main {
   .container-1 .container-picture {
     background-image: url("./Imagenes/image-product-desktop.jpg");
     background-repeat: no-repeat;
-    height: 63vh;
+    height: 68vh;
     width: 365px;
     border-top-right-radius: 0;
     border-bottom-left-radius: 10px;
@@ -129,7 +130,8 @@ main {
   }
   .btn-add-cart {
     width: 30vw;
-    margin-bottom: 0;
+    max-width: 280px;
     margin-left: 23px;
+    margin-right: 23px;
   }
 }
