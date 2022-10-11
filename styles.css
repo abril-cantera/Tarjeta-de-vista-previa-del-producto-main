@@ -16,20 +16,120 @@ main {
   align-items: center;
 }
 .container-1 {
-  /* margin: 10% 0; */
-  background-color: aqua;
+  background-color: white;
   height: auto;
-  width: 300px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  width: 94vw;
+  border-radius: 10px;
 }
-.container-1 .container-picture .container-img img {
-  width: 300px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+.container-1 .container-picture {
+  background-image: url(./Imagenes/image-product-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 94vw;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 
 .container-text {
+  height: auto;
+}
+.title-uno {
+  padding: 20px 0px 5px 20px;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(141, 141, 136);
+}
+.title-dos {
+  font-family: 'Fraunces', serif;
+  padding: 10px 20px;
+  font-size: 2.8rem;
+}
+.container-text p {
+  font-size: 1.3rem;
+  padding: 5px 10px 5px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 20px;
+  color: rgb(141, 141, 136);
+}
+.container-price {
+  display: flex;
+  padding:  10px 25px;
+  align-items: center;
+}
+.container-price .price-h3 {
+  font-size: 3rem;
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  padding-right: 15px;
+  color: rgb(55, 118, 82);
+}
+.container-price .price-h4 {
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+.btn-add-cart {
+  height: 50px;
+  width: 89vw;
+  margin-left: 10px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(55, 118, 82);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+.fa-solid {
+  margin-right: 13px;
+  font-size: 1.7rem;
+}
 
+
+@media (min-width: 768px) {}
+
+
+@media (min-width: 1024px) {
+  .container-1 {
+    display: flex;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-text {
+    width: 350px;
+  }
+  .container-1 .container-picture {
+    background-image: url("./Imagenes/image-product-desktop.jpg");
+    background-repeat: no-repeat;
+    height: 63vh;
+    width: 365px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+  .title-uno {
+    padding: 5px 20px;
+  }
+  .title-dos {
+    font-size: 3.8rem;
+    padding-left: 30px;
+  }
+  .container-text p {
+    font-size: 1.6rem;
+    padding-left: 32px;
+    line-height: 30px;
+  }
+  .container-price {
+    padding-left: 30px;
+  }
+  .btn-add-cart {
+    width: 30vw;
+    margin-bottom: 0;
+    margin-left: 23px;
+  }
 }
