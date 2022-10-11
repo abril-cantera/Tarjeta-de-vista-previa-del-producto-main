@@ -9,8 +9,136 @@ html {
 body {
   background-color: rgba(237, 217, 192, 0.76);
 }
+.inactive {
+  display: none;
+}
+.active {
+  display: block;
+}
+
+
+header {
+  height: 10vh;
+}
+.container-icon {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.container-icon a {
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-weight: 600;
+}
+.container-icon i {
+  display: flex;
+  justify-content: end;
+  font-size: 25px;
+}
+.number {
+  position: absolute;
+  background-color: rgb(42, 134, 79);
+  border-radius: 100%;
+  font-size: 1.5rem;
+  height: 21px;
+  width: 20px;
+  text-align: center;
+  right: 20px;
+  top: 3%;
+}
+
+
+
+.menu-cart {
+  position: absolute;
+  background-color: white;
+  width: 94vw;
+  height: 88vh;
+  left:3%;
+  border-radius: 10px;
+}
+.menu-cart__h3 {
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  padding:10px 8px;
+  font-family: 'Montserrat', sans-serif;
+}
+.container-details {
+  border-bottom: 2px solid;
+  display: flex;
+  margin: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+.container-img {
+  height: 75px;
+  width: 130px;
+  background-image: url("./Imagenes/image-product-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 10px;
+}
+.container-text-details {
+  padding-right: 10px;
+  font-size: 1.6rem;
+}
+.container-details__h3 {
+  padding-bottom: 10px;
+}
+.cantidad-subtotal {
+  height: 80px;
+  border-bottom: 2px solid;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: 'Montserrat', sans-serif;
+}
+.cantidad-subtotal .cantidad {
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+.cantidad-subtotal .subtotal {
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+.total {
+  border-bottom: 2px solid;
+  margin: 10px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.7rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.buttons {
+  border-top: 2px solid;
+  display: flex;
+  margin: 10px;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  height: 295px;
+}
+.btn {
+  height: 50px;
+  width: 130px;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  background-color: rgb(55, 118, 82);
+}
+
+
+
+
+
 main {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;

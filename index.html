@@ -12,6 +12,44 @@
     <title>Document</title>
   </head>
   <body>
+    <header>
+      <nav class="container-icon">
+        <a href="">Tienda de perfumes</a>
+        <i id="icon" class="fa-solid fa-cart-shopping"></i>
+        <p class="number inactive" id="number">✔</p>
+      </nav>
+    </header>
+    <section id="menu-cart" class="menu-cart inactive">
+      <h3 class="menu-cart__h3">
+        Carrito de compras
+      </h3>
+      <section class="container-details">
+         <i id="icon-cart-details" class="fa-solid fa-xmark inactive"></i>
+        <section class="container-img inactive"></section>
+        <section class="container-text-details inactive">
+          <h3 class="container-details__h3">Gabrielle Essence Eau De Parfum</h3>
+          <h4 class="container-details__h4">1 x 149.99</h4>
+        </section>
+      </section>
+      <section class="cantidad-subtotal">
+        <section class="cantidad">
+          <h4>Products</h4>
+          <h5 class="cantidad-delete inactive">1</h5>
+        </section>
+        <section class="subtotal">
+          <h5>SUBTOTAL</h5>
+          <h5 class="subtotal-delete inactive">$149.99</h5>
+        </section>
+      </section>
+      <section class="total">
+        <h4 class="total__h4">TOTAL</h4>
+        <h5 class="total__h5 inactive">$149.99</h5>
+      </section>
+      <section class="buttons">
+        <button class="btn">GO TO CART</button>
+        <button class="btn">CHECKOUT <i class="fa-solid fa-arrow-right"></i></button>
+      </section>
+    </section>
     <main>
       <div class="container-1">
         <div class="container-picture">
@@ -24,9 +62,10 @@
             <h3 class="price-h3">$149.99</h3>
             <h4 class="price-h4">$169.99</h4>
           </section>
-          <button class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+          <button id="btn-add-car" class="btn-add-cart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
         </div>
       </div>
     </main>
+    <script src="./main.js"></script>
   </body>
 </html>
