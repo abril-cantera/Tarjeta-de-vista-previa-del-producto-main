@@ -54,9 +54,9 @@ header {
 .menu-cart {
   position: absolute;
   background-color: white;
-  width: 94vw;
+  width: 95vw;
   height: 88vh;
-  left:3%;
+  right: 10px;
   border-radius: 10px;
 }
 .menu-cart__h3 {
@@ -222,6 +222,13 @@ main {
 }
 
 
+@media (min-width: 767px) {
+  .menu-cart {
+  max-width: 670px;
+  right: 50px;
+  }
+}
+
 @media (min-width: 1024px) {
   .container-1 {
     display: flex;
@@ -261,5 +268,11 @@ main {
     max-width: 280px;
     margin-left: 23px;
     margin-right: 23px;
+  }
+  .menu-cart {
+    width: 660px;
+    height: 80vh;
+    right: 360px;
+    margin-left: 100%;
   }
 }
