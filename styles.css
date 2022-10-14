@@ -13,8 +13,65 @@ body {
   display: none;
 }
 .active {
-  display: block;
+  display: flex;
 }
+.animacionIn {
+  animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animacionOut {
+  animation: slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes slide-out-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+}
+@keyframes slide-out-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+}
+
+
 
 
 header {
@@ -122,7 +179,7 @@ header {
   margin: 10px;
   justify-content: space-evenly;
   align-items: flex-end;
-  height: 295px;
+  padding-top: 20%;
 }
 .btn {
   height: 50px;
@@ -149,6 +206,7 @@ main {
   width: 94vw;
   max-width: 400px;
   border-radius: 10px;
+  flex-direction: column;
 }
 .container-1 .container-picture {
   background-image: url(./Imagenes/image-product-mobile.jpg);
@@ -231,11 +289,11 @@ main {
 
 @media (min-width: 1024px) {
   .container-1 {
-    display: flex;
     width: 70vw;
     max-width: 635px;
     justify-content: center;
     align-items: center;
+    flex-direction: row;
   }
   .container-text {
     width: 350px;
@@ -271,7 +329,7 @@ main {
   }
   .menu-cart {
     width: 660px;
-    height: 80vh;
+    height: auto;
     right: 360px;
     margin-left: 100%;
   }

@@ -3,6 +3,9 @@ const number = document.getElementById("number");
 const icon = document.getElementById("icon");
 const menuCart = document.getElementById("menu-cart");
 const iconCartDetails = document.getElementById("icon-cart-details");
+const iconCartDetailsClose = document.getElementById("icon-cart-details-close");
+
+const containerPrincipalShop = document.getElementById('container-principal-shop');
 
 
 const img = document.querySelector(".container-img");
@@ -13,11 +16,18 @@ const totalDelete = document.querySelector(".total__h5");
 
 
 
-
 btnAddCar.addEventListener("click", addProduct);
-icon.addEventListener("click", openCart)
+icon.addEventListener("click", openAndCloseCart)
 iconCartDetails.addEventListener("click", productDelete);
+iconCartDetailsClose.addEventListener("click", openShop);
 
+
+function openShop() {
+  menuCart.classList.add("inactive");
+  iconCartDetails.classList.remove("inactive");
+  containerPrincipalShop.classList.add("inactive");
+  containerPrincipalShop.classList.toggle("active");
+}
 
 function addProduct() {
   number.classList.remove("inactive");
@@ -30,9 +40,14 @@ function addProduct() {
 };
 
 
-function openCart() {
+function openAndCloseCart() {
   menuCart.classList.toggle("inactive");
-}
+  containerPrincipalShop.classList.add("inactive");
+  containerPrincipalShop.classList.toggle("active");
+  iconCartDetails.classList.remove("inactive");
+  menuCart.classList.add("animacionIn");
+};
+
 function productDelete() {
   img.classList.add("inactive");
   detailsImg.classList.add("inactive");
@@ -41,4 +56,4 @@ function productDelete() {
   totalDelete.classList.add("inactive");
   iconCartDetails.classList.add("inactive");
   number.classList.add("inactive");
-}
+};
